@@ -4,8 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hello</h1>
+    <nav>
+      <div class="project">
+        <div class="project-item">
+          <div class="project-item__name">default</div>
+
+          <div class="project-item__number">
+            <div>3</div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-item__name">default</div>
+          <div class="project-item__number">
+            <div>3</div>
+          </div>
+        </div>
+      </div>
+      <div class="new-item">
+        <div class="new-item__plus">+</div>
+
+        <input class="new-item__input" type="text" />
+      </div>
+    </nav>
+    <main class="tasks">
+      <h1 class="tasks__title">Default</h1>
+      <div class="login-box">
+        <form>
+          <div class="user-box">
+            <input type="text" name="" id="title" required />
+            <label>Title</label>
+          </div>
+          <label for="priority">Priority:</label>
+          <select name="user-box" id="priority">
+            <option value="HIGH">High</option>
+            <option value="MID">Mid</option>
+            <option value="LOW">Low</option>
+          </select>
+
+          <div class="date-container">
+            <label for="date">Due date:</label>
+            <input type="date" id="date" name="birthday" />
+          </div>
+          <label for="note">Note</label>
+          <textarea name="note" id="note" rows="5" columns="32"></textarea>
+          <button class="submit-button" type="submit">ADD</button>
+        </form>
+      </div>
+      <div class="tasks-container-container">
+        <div class="tasks-container">
+          <div class="container">
+            <div class="tasks-container__title">title</div>
+
+            <div class="details">
+              <div class="tasks-container__priority">HIGH</div>
+              <div class="tasks-container__date">date</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="tasks-container">
+          <div class="container">
+            <div class="tasks-container__title">title</div>
+            <div class="details">
+              <div class="tasks-container__priority">HIGH</div>
+              <div class="tasks-container__date">date</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
